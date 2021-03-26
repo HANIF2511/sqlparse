@@ -1,0 +1,91 @@
+	<kendo-formfield class="form-field" [orientation]="'horizontal'">
+		<kendo-label class="form-label" [for]="PASSWORD" text="Password"></kendo-label>
+		<input class="form-input" type="password" autocomplete=new-password  formControlName="PASSWORD" kendoTextBox #PASSWORD />
+		</kendo-formfield>
+
+        <kendo-numerictextbox
+            [spinners]="true"  [format]="'n2'"
+            [step]="1"
+        ></kendo-numerictextbox>
+
+{style: 'currency',currency: 'EUR',currencyDisplay: 'name'}
+
+{"style": "currency","currency": "EUR","currencyDisplay": "name"}
+[{"pageNo":1,"areaNo":2,"data":[{"ADD1":"bb"}]},{"pageNo":1,"areaNo":1,"data":[{"NAME1":"pass1","DATE_IN1":"2020-02-29T22:00:00.000Z","PASS1":"abv","EMAIL1":null,"NUM1":null}]}]
+
+{"style": "currency","currency": "KWD ","currencyDisplay": "code", "min":0, "max":5, "spinners":true,"step":1}
+{"style": "currency","currency": "KWD ","currencyDisplay": "code","minimumFractionDigits":1, "min":0, "max":5, "spinners":true,"step":1, "maximumFractionDigits":1}
+
+{"style": "currency","currency": "KWD ","currencyDisplay": "code","minimumFractionDigits":0, "min":0, "max":5, "spinners":true,"step":1, "maximumFractionDigits":1}
+
+{"style": "decimal","minimumFractionDigits":0, "min":0, "max":5, "spinners":true,"step":1, "maximumFractionDigits":1}
+
+
+maximumFractionDigits:1
+minimumFractionDigits:1
+
+minimumIntegerDigits:3
+
+[{"pageNo":1,"areaNo":2,"data":[{"ADD1":"bb"}]},{"pageNo":1,"areaNo":1,"data":[{"NAME1":"pass2","DATE_IN1":"2020/03","PASS1":"password","EMAIL1":"email","NUM1":4,"DATE1":"2020-11-08T22:00:00.000Z","LOOK1":"10"},{"NAME1":"pass1","DATE_IN1":"2020/4","PASS1":"password"}]}]
+[{"pageNo":1,"areaNo":2,"data":[{"ADD1":"bb"}]},{"pageNo":1,"areaNo":1,"data":[{"NAME1":"pass2","DATE_IN1":"2020/03","PASS1":"password","EMAIL1":"email","NUM1":4,"DATE1":"2020-11-08T22:00:00.000Z","LOOK1":"10"},{"NAME1":"pass1","DATE_IN1":"2020/4","PASS1":"password"}]}]
+
+[{"pageNo":1,"areaNo":2,"data":[{"ADD1":"bb"}]},{"pageNo":1,"areaNo":1,"data":[{"NAME1":"pass2","DATE_IN1":"2020/03","PASS1":"password","EMAIL1":"email","NUM1":4,"DATE1":"2020-11-08T22:00:00.000Z","LOOK1":"10"},{"NAME1":"pass1","DATE_IN1":"2020/4","PASS1":"password"}]}]
+
+
+
+[checked]="dataItem.DISABLED"
+
+    <kendo-grid-column field="DISABLED" title="Disable"  editor="boolean" width="80">
+    <ng-template kendoGridCellTemplate let-dataItem>
+    <input type="checkbox" [checked]="dataItem.DISABLED"/>
+    </ng-template>
+  </kendo-grid-column>
+
+<kendo-grid-column
+*ngFor="let column of columns"
+field="{{column.field}}"
+title="{{column.title}}"
+format="{{column.format}}"
+type="{{column.type}}"
+filter="{{column.type}}"
+editor="{{column.type}}"
+>
+  <p *ngIf="column.checkboxfield">
+ <ng-template kendoGridCellTemplate let-dataItem>
+  <input type="checkbox" />
+</ng-template>
+</p>
+
+
+[checked]="formGroup.get(column.field)"
+
+<input kendoTextBox />
+<input kendoTextBox type="email" />
+<input kendoTextBox type="password" />
+
+
+
+  <kendo-grid-column field="FIELD_REQUIRED" title="Req."  editor="boolean" width="40">
+	   <ng-template kendoGridCellTemplate let-dataItem>
+		 <input type="checkbox" [checked]="dataItem.FIELD_REQUIRED"/>
+		 </ng-template></kendo-grid-column>
+
+<kendo-grid-checkbox-column title="Custom checkbox">
+           <ng-template kendoGridCellTemplate let-idx="rowIndex">Select row 
+	        <input [kendoGridSelectionCheckbox]="idx" />
+           </ng-template>
+         </kendo-grid-checkbox-column>
+
+
+ <p *ngIf="column.emailboxfield">
+  <ng-template KendoGridEditTemplate let-dataItem>
+   <input ngModel email="true" type="email"  ngDefaultControl/>
+ </ng-template>
+ </p>
+
+ <p *ngIf="column.emailboxfield">
+  <ng-template kendoGridEditTemplate let-dataItem >
+    <kendo-textbox name={{column.field}} [(ngModel)]="column.field"  ngDefaultControl [formControl]="getformGroup(column.field)"></kendo-textbox>
+  </ng-template>
+</p>
+

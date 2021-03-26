@@ -1,0 +1,42 @@
+{
+  "name": "sql_server",
+  "version": "1.0.0",
+  "description": "SQL server REST API",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fuad Kamal",
+  "license": "ISC",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.10.5",
+    "any-db": "^2.2.1",
+    "any-db-mysql": "^2.3.0",
+    "any-db-postgres": "^2.3.0",
+    "any-db-sqlite3": "^2.3.0",
+    "compression": "^1.7.4",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "deasync": "^0.1.21",
+    "decode-html": "^2.0.0",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "formidable": "^1.2.2",
+    "git": "^0.1.5",
+    "http": "0.0.1-security",
+    "macaddress": "^0.5.1",
+    "md5": "^2.3.0",
+    "nexmo": "^2.9.1",
+    "nodemailer": "^6.4.17",
+    "oracledb": "^5.1.0",
+    "request": "^2.88.2",
+    "smtp-client": "^0.3.3",
+    "sqlite3": "^4.2.0",
+    "sync-request": "^6.1.0",
+    "winston": "^3.3.3",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  }
+}

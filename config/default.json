@@ -1,0 +1,92 @@
+{
+    "Customer": {
+    "dbConfig": {
+      "adapter": "sqlite3",
+      "host": "",
+      "port": "",
+      "dbName": "CRC_CAT.db",
+      "user": "",
+      "password" : ""
+
+    },
+    "db_oracle": {
+      "adapter": "oracle",
+      "host": "localhost",
+      "port": "",
+      "dbName": "xe",
+      "user": "star",
+      "password" : "star@12345",
+      "connectString" : "localhost/xe"
+
+    },
+
+    "mysql": {
+      "adapter": "mysql",
+      "host": "localhost",
+      "dbName": "star",
+       "port": "3306",
+      "user": "root",
+      "password" : "Hany@2021"
+
+    },
+    "postgres": {
+      "adapter": "postgres",
+      "host": "localhost",
+      "port": "5432",
+      "dbName": "postgres",
+      "user": "postgres",
+      "password" : "hani12345"
+
+    },
+    "dbConfig1": {
+      "adapter": "postgres",
+      "host": "192.168.1.4",
+      "port": 5432,
+      "dbName": "star",
+      "user": "openpg",
+      "password" : ""
+    },
+    "hostConfig": {
+      "port": 8090,
+      "attDir" : "./attachments",
+      "tempDir" : "temp"
+    },
+    "mailConfig1": {
+      "host" : "mail.gordano.com",
+      "port" : 465,
+      "user" : "fuadk@gordano.com",
+      "pass" : "",
+      "from" : "noreply@zain.com"
+    },
+    "mailConfig": {
+      "host" : "smtp.gmail.com",
+      "port" : 465,
+      "user" : "fuadks@gmail.com",
+      "pass" : "",
+      "from" : "noreply@zain.com"
+    },
+    "valifyConfig": {
+      "front_image" : "egy_nid_ocr__front_image",
+      "back_image" : "egy_nid_ocr__back_image",
+      "face_img" : "face_match__face_img",
+      "userName" : "star",
+      "password" : "star"
+    },
+
+    "loggingConfig": {
+      "logFilenameNumber": true,
+      "silent" : false
+    },
+    "smsConfig": {
+      "url" : "https://gateway.sms77.io/api/sms",
+      "apiKey" : "e420dGYaJziSvSr3v22b2uQ6tuX4qkX8nm53xvurk7bDlvH0gmJFbuGwyF6Kn4Tk"
+    } ,
+    "loggingTrans": {
+      "loggingmode": "DB"
+    },
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  }
+}
